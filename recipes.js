@@ -2,17 +2,23 @@ var recipes = [
 	"Barbecue Chicken Pizza",
 	"Beef Florentine",
 	"Beef Stroganoff",
+	"Chicken & Dumplings",
 	"Chicken & Sausage",
 	"Chicken & Smashed Potatoes",
 	"Chicken Burritos",
 	"Chicken Cacciatore",
+	"Chicken Divan",
 	"Chicken Marsala",
+	"Chicken Murango",
 	"Chicken Parmesan",
-	"Chicken Pot Pie",	
+	"Chicken Pot Pie",
+	"Chicken Salad with Watermelon Pickles",
+	"Chicken Tenders",
 	"Chili",
 	"Crab & Linguine",
 	"Crumbly Chicken",
 	"Deep Dish Pizza",
+	"Dilva's Chicken",
 	"Fajitas",
 	"Falafel",
 	"Ham, Peas & Pasta",
@@ -47,3 +53,10 @@ function selectRecipe() {
 	console.log(randNum);
 	document.getElementById("selectedRecipe").innerHTML = recipes[randNum];
 }
+
+document.addEventListener('keyup', event => {
+	if (event.code === 'Space') {
+		console.log('Space pressed');
+		selectRecipe();
+	}
+})
