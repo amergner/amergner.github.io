@@ -55,8 +55,10 @@ function selectRecipe() {
 }
 
 document.addEventListener('keyup', event => {
-	if (event.code === 'Space') {
+	if (event.code === 'Space' || ) {
 		console.log('Space pressed');
 		selectRecipe();
 	}
 })
+
+document.addEventListener('touchstart', selectRecipe(), false)
