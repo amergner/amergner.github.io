@@ -52,13 +52,17 @@ function selectRecipe() {
 	var randNum = Math.floor(Math.random() * numRecipes);
 	console.log(randNum);
 	document.getElementById("selectedRecipe").innerHTML = recipes[randNum];
-}
+};
 
-document.addEventListener('keyup', event => {
-	if (event.code === 'Space' || ) {
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+};
+
+/*document.addEventListener('keyup', event => {
+	if (event.code === 'Space') {
 		console.log('Space pressed');
 		selectRecipe();
 	}
-})
+};
 
-document.addEventListener('touchstart', selectRecipe(), false)
+document.addEventListener('touchstart', selectRecipe(), false);*/
